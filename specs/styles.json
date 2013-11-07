@@ -64,7 +64,7 @@
                             "cmyk": [ null, null, null, null ] 
                         }
                     ]
-                }
+                },
                 "democrat":
                 {
                     "no_data":
@@ -101,7 +101,7 @@
                             "cmyk": [ null, null, null, null ] 
                         }
                     ]
-                }
+                },
                 "money":
                 {
                     "no_data":
@@ -138,7 +138,7 @@
                             "cmyk": [ null, null, null, null ] 
                         }
                     ]
-                }
+                },
                 "generic":
                 {
                     "no_data":
@@ -176,7 +176,7 @@
                         }
                     ]
                 }
-            }
+            },
             "diverging":
             {
                 "republican_democrat":
