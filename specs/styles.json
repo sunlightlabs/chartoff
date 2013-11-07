@@ -1,0 +1,264 @@
+{
+    "basic_structure":  
+    {   
+        
+    },
+    "text_styles":      
+    {   
+        
+    },
+    "colors":
+    {
+        "background":
+        {
+
+        },
+        "data":
+        {
+            "main":
+            {
+
+            },
+            "specialty":
+            {
+
+            }
+        },
+        "choropleth":
+        {
+            "sequential":
+            {
+                "republican":
+                {
+                    "no_data":
+                    {
+                        "hex" : "#E5E2E0",
+                        "rgb" : [ 229, 226, 224 ],
+                        "cmyk": [ 9, 8, 8, 0] 
+                    },
+                    "scale":
+                    [
+                        {
+                            "hex" : "#712422",
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        },
+                        {
+                            "hex" : "#9A3E25",
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        },
+                        {
+                            "hex" : "#B37055",
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        },
+                        {
+                            "hex" : "#D9A78D",
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        },
+                        {
+                            "hex" : "#EDCEBC",
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        }
+                    ]
+                }
+                "democrat":
+                {
+                    "no_data":
+                    {
+                        "hex" : "#E5E2E0",
+                        "rgb" : [ 229, 226, 224 ],
+                        "cmyk": [ 9, 8, 8, 0] 
+                    },
+                    "scale":
+                    [
+                        {
+                            "hex" : null,
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        },
+                        {
+                            "hex" : null,
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        },
+                        {
+                            "hex" : null,
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        },
+                        {
+                            "hex" : null,
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        },
+                        {
+                            "hex" : null,
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        }
+                    ]
+                }
+                "money":
+                {
+                    "no_data":
+                    {
+                        "hex" : "#E5E2E0",
+                        "rgb" : [ 229, 226, 224 ],
+                        "cmyk": [ 9, 8, 8, 0] 
+                    },
+                    "scale":
+                    [
+                        {
+                            "hex" : null,
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        },
+                        {
+                            "hex" : null,
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        },
+                        {
+                            "hex" : null,
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        },
+                        {
+                            "hex" : null,
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        },
+                        {
+                            "hex" : null,
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        }
+                    ]
+                }
+                "generic":
+                {
+                    "no_data":
+                    {
+                        "hex" : "#E5E2E0",
+                        "rgb" : [ 229, 226, 224 ],
+                        "cmyk": [ 9, 8, 8, 0] 
+                    },
+                    "scale":
+                    [
+                        {
+                            "hex" : null,
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        },
+                        {
+                            "hex" : null,
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        },
+                        {
+                            "hex" : null,
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        },
+                        {
+                            "hex" : null,
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        },
+                        {
+                            "hex" : null,
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        }
+                    ]
+                }
+            }
+            "diverging":
+            {
+                "republican_democrat":
+                {
+                    "no_data":
+                    {
+                        "hex" : "#E5E2E0",
+                        "rgb" : [ 229, 226, 224 ],
+                        "cmyk": [ 9, 8, 8, 0] 
+                    },
+                    "scale":
+                    [
+                        {
+                            "hex" : null,
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        },
+                        {
+                            "hex" : null,
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        },
+                        {
+                            "hex" : null,
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        },
+                        {
+                            "hex" : null,
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        },
+                        {
+                            "hex" : null,
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        }
+                    ]
+                },
+                "anti_pro":
+                {
+                    "no_data":
+                    {
+                        "hex" : "#E5E2E0",
+                        "rgb" : [ 229, 226, 224 ],
+                        "cmyk": [ 9, 8, 8, 0] 
+                    },
+                    "scale":
+                    [
+                        {
+                            "hex" : null,
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        },
+                        {
+                            "hex" : null,
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        },
+                        {
+                            "hex" : null,
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        },
+                        {
+                            "hex" : null,
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        },
+                        {
+                            "hex" : null,
+                            "rgb" : [ null, null, null ],
+                            "cmyk": [ null, null, null, null ] 
+                        }
+                    ]
+                }
+            }
+        }
+
+    },
+    "plot_elements":
+    {
+
+    }
+}
