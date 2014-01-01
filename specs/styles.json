@@ -31,7 +31,7 @@
                 "hex" : "#E5E2E0",
                 "rgb" : [ 229, 226, 224 ],
                 "cmyk": [ 9, 8, 8, 0 ]
-            },
+            }
         },
         "text":
         {
@@ -354,14 +354,14 @@
                     {
                         "hex" : null,
                         "rgb" : null,
-                        "cmyk": null,
+                        "cmyk": null
                     },
                     "subsets":
                         [
                             {
                                 "hex" : null,
                                 "rgb" : null,
-                                "cmyk": null,
+                                "cmyk": null
                             }
                         ]
                 }
