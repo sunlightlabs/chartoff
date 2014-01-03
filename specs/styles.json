@@ -671,34 +671,34 @@
                     "scale":
                     [
                         {
-                            "hex" : null,
+                            "hex" : "#BD2D28",
                             "rgb" : [ null, null, null ],
                             "cmyk": [ null, null, null, null ]
                         },
                         {
-                            "hex" : null,
+                            "hex" : "#C37A73",
                             "rgb" : [ null, null, null ],
                             "cmyk": [ null, null, null, null ]
                         },
                         {
-                            "hex" : null,
+                            "hex" : "#C8C6C6",
                             "rgb" : [ null, null, null ],
                             "cmyk": [ null, null, null, null ]
                         },
                         {
-                            "hex" : null,
+                            "hex" : "#75A999",
                             "rgb" : [ null, null, null ],
                             "cmyk": [ null, null, null, null ]
                         },
                         {
-                            "hex" : null,
+                            "hex" : "#0F8C79",
                             "rgb" : [ null, null, null ],
                             "cmyk": [ null, null, null, null ]
                         }
                     ]
                 }
             }
-        }
+        },
 
     },
     "plot_elements":
