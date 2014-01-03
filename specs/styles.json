@@ -5,6 +5,106 @@
     },
     "text_styles":
     {
+        "header_title" :
+        {
+            "font-family" : '"Franklin Gothic Book", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif',
+            "font-size" : "20px",
+            "font-weight": "normal"
+            "font-style": "normal",
+            "text-align" : "left",
+            "color" : "#635F5D",
+            "color_ref" : ["colors", "text", "main"]
+        },
+        "header_title_emphatic" :
+        {
+            "font-family": '"Franklin Gothic Demi Cond", "Franklin Gothic Medium Cond", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif"'
+            "font-size" : "20px",
+            "font-weight": "normal"
+            "font-style": "normal",
+            "text-align" : "left",
+            "color" : "#635F5D",
+            "color_ref" : ["colors", "text", "main"]
+        },
+        "header_title_explanatory": 
+        {
+            "font-family": 'font-family: Georgia, Times, "Times New Roman", serif',
+            "font-size" : "12px",
+            "font-weight": "normal"
+            "font-style": "italic",
+            "text-align" : "left",
+            "color" : "#8E8883",
+            "color_ref" : ["colors", "text", "light"]
+        },
+        "axis_label" :
+        {
+            "font-family": '"Franklin Gothic Demi Cond", "Franklin Gothic Medium Cond", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif"'
+            "font-size" : "12px",
+            "font-weight": "normal"
+            "font-style": "normal",
+            "text-align" : "center",
+            "color" : "#635F5D",
+            "color_ref" : ["colors", "text", "main"]
+        },
+        "axis_title" :
+        {
+            "font-family" : '"Franklin Gothic Book", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif',
+            "font-size" : "12px",
+            "font-weight": "normal"
+            "font-style": "normal",
+            "text-align" : "center",
+            "color" : "#635F5D",
+            "color_ref" : ["colors", "text", "main"]
+        },
+        "key_label" :
+        {
+            "font-family" : '"Franklin Gothic Book", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif',
+            "font-size" : "10px",
+            "font-weight": "normal"
+            "font-style": "normal",
+            "text-align" : "left",
+            "color" : "#635F5D",
+            "color_ref" : ["colors", "text", "main"]
+        },
+        "callout" :
+        {
+            "font-family": 'font-family: Georgia, Times, "Times New Roman", serif',
+            "font-size" : "10px",
+            "font-weight": "normal"
+            "font-style": "italic",
+            "text-align" : "left",
+            "color" : "#635F5D",
+            "color_ref" : ["colors", "text", "main"]
+        },
+        "point_label" :
+        {
+            "font-family" : '"Franklin Gothic Book", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif',
+            "font-size" : "10px",
+            "font-weight": "normal"
+            "font-style": "normal",
+            "text-align" : "right",
+            "color" : "#635F5D",
+            "color_ref" : ["colors", "text", "main"]
+        },
+        "citation_title" :
+        {
+            "font-family": 'font-family: Georgia, Times, "Times New Roman", serif',
+            "font-size" : "8px",
+            "font-weight": "bold"
+            "font-style": "normal",
+            "text-align" : "left",
+            "color" : "#8E8883",
+            "color_ref" : ["colors", "text", "light"]
+        },
+        "citation_source" :
+        {
+            "font-family": 'font-family: Georgia, Times, "Times New Roman", serif',
+            "font-size" : "10px",
+            "font-weight": "normal"
+            "font-style": "italic",
+            "text-align" : "left",
+            "color" : "#8E8883",
+            "color_ref" : ["colors", "text", "light"]
+        }
 
     },
     "colors":
