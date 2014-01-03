@@ -59,13 +59,13 @@
         {
             "solid":
             {
-                "width": 1,
+                "size": 1,
                 "color": "#FFFFFF",
                 "color_ref": ["colors", "line", "white"]
             },
             "dashed":
             {
-                "width": 1,
+                "size": 1,
                 "color": "#C0C0BB",
                 "color_ref": ["colors", "line", "grey"],
                 "margin":
