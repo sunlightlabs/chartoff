@@ -700,6 +700,189 @@
             }
         },
 
+        "network_graph":
+        {
+            "yellows":
+                [
+                    {
+                        "hex" : "#F2DA57",
+                        "rgb" : [ 242, 218, 87 ],
+                        "cmyk": [ null, null, null, null ]
+                    },
+                    {
+                        "hex" : "#E2BA22",
+                        "rgb" : [ 227, 186, 34 ],
+                        "cmyk": [ null, null, null, null ]
+                    },
+                    {
+                        "hex" : "#B08B12",
+                        "rgb" : [ 176, 139, 18 ],
+                        "cmyk": [ null, null, null, null ]
+                    }
+                ],
+            "oranges":
+                [
+                    {
+                        "hex" : "#F6B656",
+                        "rgb" : [ 244, 182, 86 ],
+                        "cmyk": [ null, null, null, null ]
+                    },
+                    {
+                        "hex" : "#E58429",
+                        "rgb" : [ 229, 132, 41 ],
+                        "cmyk": [ null, null, null, null ]
+                    },
+                    {
+                        "hex" : "#BA5F06",
+                        "rgb" : [ 186, 95, 6 ],
+                        "cmyk": [ null, null, null, null ]
+                    }
+                ],
+            "reds":
+                [
+                    {
+                        "hex" : "#E25A42",
+                        "rgb" : [ 226, 90, 66 ],
+                        "cmyk": [ null, null, null, null ]
+                    },
+                    {
+                        "hex" : "#BD2D28",
+                        "rgb" : [ 189, 45, 40 ],
+                        "cmyk": [ null, null, null, null ]
+                    },
+                    {
+                        "hex" : "#8C3B00",
+                        "rgb" : [ 140, 59, 0 ],
+                        "cmyk": [ null, null, null, null ]
+                    }
+                ],
+            "pinks":
+                [
+                    {
+                        "hex" : "#DCBDCF",
+                        "rgb" : [ 220, 189, 207 ],
+                        "cmyk": [ null, null, null, null ]
+                    },
+                    {
+                        "hex" : "#D15A86",
+                        "rgb" : [ 209, 90, 134 ],
+                        "cmyk": [ null, null, null, null ]
+                    },
+                    {
+                        "hex" : "#6D191B",
+                        "rgb" : [ 109, 25, 27 ],
+                        "cmyk": [ null, null, null, null ]
+                    }
+                ],
+            "magentas":
+                [
+                    {
+                        "hex" : "#B396AD",
+                        "rgb" : [ 179, 150, 173 ],
+                        "cmyk": [ null, null, null, null ]
+                    },
+                    {
+                        "hex" : "#8E6C8A",
+                        "rgb" : [ 142, 108, 138 ],
+                        "cmyk": [ null, null, null, null ]
+                    },
+                    {
+                        "hex" : "#842854",
+                        "rgb" : [ 132, 40, 84 ],
+                        "cmyk": [ null, null, null, null ]
+                    }
+                ],
+            "blues":
+                [
+                    {
+                        "hex" : "#B0CBDB",
+                        "rgb" : [ 176, 203, 219 ],
+                        "cmyk": [ null, null, null, null ]
+                    },
+                    {
+                        "hex" : "#6B99A1",
+                        "rgb" : [ 107, 153, 161 ],
+                        "cmyk": [ null, null, null, null ]
+                    },
+                    {
+                        "hex" : "#5F7186",
+                        "rgb" : [  95, 113, 134 ],
+                        "cmyk": [ null, null, null, null ]
+                    }
+                ],
+            "cyans":
+                [
+                    {
+                        "hex" : "#33B6D0",
+                        "rgb" : [ 51, 182, 208 ],
+                        "cmyk": [ null, null, null, null ]
+                    },
+                    {
+                        "hex" : "#42A5B3",
+                        "rgb" : [ 66, 165, 179 ],
+                        "cmyk": [ null, null, null, null ]
+                    },
+                    {
+                        "hex" : "#5F7186",
+                        "rgb" : [ 25, 53, 86 ],
+                        "cmyk": [ null, null, null, null ]
+                    }
+                ],
+            "teals":
+                [
+                    {
+                        "hex" : "#7ABFCC",
+                        "rgb" : [ 122, 191, 204 ],
+                        "cmyk": [ null, null, null, null ]
+                    },
+                    {
+                        "hex" : "#0F8C79",
+                        "rgb" : [ 15, 140, 121 ],
+                        "cmyk": [ null, null, null, null ]
+                    },
+                    {
+                        "hex" : "#137B80",
+                        "rgb" : [ 19, 123, 128 ],
+                        "cmyk": [ null, null, null, null ]
+                    }
+                ],
+            "mints":
+                [
+                    {
+                        "hex" : "#C8D7A1",
+                        "rgb" : [ 200, 215, 161 ],
+                        "cmyk": [ null, null, null, null ]
+                    },
+                    {
+                        "hex" : "#6BBBA1",
+                        "rgb" : [ 107, 187, 161 ],
+                        "cmyk": [ null, null, null, null ]
+                    },
+                    {
+                        "hex" : "#144847",
+                        "rgb" : [ 20, 72, 71 ],
+                        "cmyk": [ null, null, null, null ]
+                    }
+                ],
+            "greens":
+                [
+                    {
+                        "hex" : "#A0B700",
+                        "rgb" : [ 160, 183, 0 ],
+                        "cmyk": [ null, null, null, null ]
+                    },
+                    {
+                        "hex" : "#5C8100",
+                        "rgb" : [ 92, 129, 0 ],
+                        "cmyk": [ null, null, null, null ]
+                    },
+                    {
+                        "hex" : "#254E00",
+                        "rgb" : [ 37, 78, 0 ],
+                        "cmyk": [ null, null, null, null ]
+                    }
+                ]
+        }
     },
     "plot_elements":
     {
