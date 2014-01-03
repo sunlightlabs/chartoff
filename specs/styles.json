@@ -47,7 +47,7 @@
         "chart_area":
         {
             "width": "100%",
-            "padding": 
+            "padding":
             {
                 "top": 22,
                 "right": 0,
@@ -94,12 +94,12 @@
             }
         },
     },
-    
+
     "plot_elements":
     {
         "canvas":
         {
-            "width": 
+            "width":
             {
                 "blog": 606,    // blog width minus padding (22 + 22)
                 "feature": 866  // feature width minus padding (22 + 22)
@@ -164,7 +164,7 @@
                 // must be either horizontal or rotated 45 degrees
                 "width": 1,
                 "color": "#C0C0BB",
-                "color_ref": ['colors', "line", "grey"], 
+                "color_ref": ['colors', "line", "grey"],
                 // SVG Attributes
                 "stroke-width": 1,
                 "stroke": "#C0C0BB",
@@ -183,11 +183,11 @@
                 "stroke": "#C0C0BB",
                 "stroke_ref": ['colors', 'line', 'grey']
                 "stroke-width": 1,
-                /* 
-                 *  circle: 
+                /*
+                 *  circle:
                  *      SVG:        r = radius of highlighted element + 1.5
                  *                  cx = cx of highlighted element
-                 *      HTML+CSS:   width & height = diameter of highlighted element + 4 
+                 *      HTML+CSS:   width & height = diameter of highlighted element + 4
                  *                  border-radius = width/2
                  */
             }
@@ -201,11 +201,11 @@
         {
             "width": 1,
             "color": "#C0C0BB",
-            "color_ref": ["colors", "line", "grey"] 
+            "color_ref": ["colors", "line", "grey"]
             //SVG Attributes
             "stroke-width":1,
             "stroke": "#C0C0BB",
-            "stroke_ref": ["colors", "line", "grey"] 
+            "stroke_ref": ["colors", "line", "grey"]
         }
     }
 
@@ -231,7 +231,7 @@
             "color" : "#635F5D",
             "color_ref" : ["colors", "text", "main"]
         },
-        "header_title_explanatory": 
+        "header_title_explanatory":
         {
             "font-family": 'font-family: Georgia, Times, "Times New Roman", serif',
             "font-size" : "12px",
@@ -311,8 +311,8 @@
             "color" : "#8E8883",
             "color_ref" : ["colors", "text", "light"]
         }
-
     },
+
     "colors":
     {
         "background":
