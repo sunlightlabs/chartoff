@@ -1,7 +1,98 @@
 {
     "basic_structure":
     {
-
+        "container":
+        {
+            "width":
+            {
+                "blog": 650,
+                "feature": 900
+            },
+            "padding":
+            {
+                "top": 12
+            },
+            "background":
+            {
+                "color": "#EFECEA",
+                "color_ref": ["colors", "background", "default"]
+            }
+        },
+        "header":
+        {
+            "container":
+            {
+                "width": "100%",
+                "padding":
+                {
+                    "left": 22,
+                    "right": 22
+                },
+                "background":
+                {
+                    "color": "#F5F3F2",
+                    "color_ref": ["colors", "background", "light"]
+                }
+            },
+            "title":
+            {
+                "float":"left",
+            },
+            "logo":
+            {
+                "width": 100,
+                "float": "right"
+            }
+        },
+        "chart_area":
+        {
+            "width": "100%",
+            "padding": 
+            {
+                "top": 22,
+                "right": 0,
+                "left": 22,
+                "bottom": 22
+            }
+        },
+        "divider":
+        {
+            "solid":
+            {
+                "width": 1,
+                "color": "#FFFFFF",
+                "color_ref": ["colors", "line", "white"]
+            },
+            "dashed":
+            {
+                "width": 1,
+                "color": "#C0C0BB",
+                "color_ref": ["colors", "line", "grey"]
+                "margin":
+                {
+                    "top": 1,
+                    "bottom": 1
+                }
+            }
+        },
+        "footer":
+        {
+            "container" :
+            {
+                "width": "100%",
+                "height": 22,
+                "padding":
+                {
+                    "left": 22,
+                    "right": 22
+                },
+                "background":
+                {
+                    "color": "#E5E2E0",
+                    "color_ref": ['colors', "background", "dark"]
+                }
+            }
+        },
     },
     "text_styles":
     {
