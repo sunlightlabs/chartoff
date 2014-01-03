@@ -94,6 +94,121 @@
             }
         },
     },
+    
+    "plot_elements":
+    {
+        "canvas":
+        {
+            "width": 
+            {
+                "blog": 606,    // blog width minus padding (22 + 22)
+                "feature": 866  // feature width minus padding (22 + 22)
+            },
+            "margin":
+            {
+                "top": 22,
+                "left": 85,
+                "bottom": 51,
+                "right": 0
+            }
+        },
+        "axis":
+        {
+            "width": 1,
+            "color": "#FFFFFF",
+            "color_ref": ["colors", "line", "white"]
+        },
+        "axis_break":
+        {
+            "height": 5px,
+            "width": 5px
+        },
+        "grid_line":
+        {
+            "solid":
+            {
+                "width": 1,
+                "color": "#FFFFFF",
+                "color_ref": ["colors", "line", "white"]
+            },
+            "dashed":
+            {
+                "width": 1,
+                "color": "#C0C0BB",
+                "color_ref": ["colors", "line", "grey"]
+                "margin":
+                {
+                    "top": 1,
+                    "bottom": 1
+                }
+            }
+        },
+        "legend":
+        {
+            'background':
+            {
+                "color": "#E5E2E0",
+                "color_ref": ['colors', "background", "dark"]
+            },
+            'border':
+            {
+                "width": 1,
+                "color": "#C0C0BB",
+                "color_ref": ["colors", "line", "grey"]
+            }
+        },
+        "indicator":
+        {
+            "line":
+            {
+                // must be either horizontal or rotated 45 degrees
+                "width": 1,
+                "color": "#C0C0BB",
+                "color_ref": ['colors', "line", "grey"], 
+                // SVG Attributes
+                "stroke-width": 1,
+                "stroke": "#C0C0BB",
+                "stroke_ref": ['colors','line', 'grey']
+            },
+            "shape":
+            {
+                "background": "#FFFFFF",
+                "background_ref": ['colors', 'line', 'white'],
+                "border-width": 1,
+                "border-color": "#C0C0BB",
+                "border-color_ref": ['colors', 'line', 'grey'],
+                // SVG Attributes
+                "fill": "#FFFFFF",
+                "fill_ref": ['colors', 'line', 'white']
+                "stroke": "#C0C0BB",
+                "stroke_ref": ['colors', 'line', 'grey']
+                "stroke-width": 1,
+                /* 
+                 *  circle: 
+                 *      SVG:        r = radius of highlighted element + 1.5
+                 *                  cx = cx of highlighted element
+                 *      HTML+CSS:   width & height = diameter of highlighted element + 4 
+                 *                  border-radius = width/2
+                 */
+            }
+        },
+        "line":
+        {
+            "width": 2,
+            "stroke-width": 2,
+        },
+        "trend_line":
+        {
+            "width": 1,
+            "color": "#C0C0BB",
+            "color_ref": ["colors", "line", "grey"] 
+            //SVG Attributes
+            "stroke-width":1,
+            "stroke": "#C0C0BB",
+            "stroke_ref": ["colors", "line", "grey"] 
+        }
+    }
+
     "text_styles":
     {
         "header_title" :
@@ -975,8 +1090,4 @@
                 ]
         }
     },
-    "plot_elements":
-    {
-
-    }
 }
