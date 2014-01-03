@@ -36,7 +36,7 @@
             },
             "title":
             {
-                "float":"left",
+                "float":"left"
             },
             "logo":
             {
@@ -67,7 +67,7 @@
             {
                 "width": 1,
                 "color": "#C0C0BB",
-                "color_ref": ["colors", "line", "grey"]
+                "color_ref": ["colors", "line", "grey"],
                 "margin":
                 {
                     "top": 1,
@@ -89,10 +89,10 @@
                 "background":
                 {
                     "color": "#E5E2E0",
-                    "color_ref": ['colors', "background", "dark"]
+                    "color_ref": ["colors", "background", "dark"]
                 }
             }
-        },
+        }
     },
 
     "plot_elements":
@@ -101,8 +101,8 @@
         {
             "width":
             {
-                "blog": 606,    // blog width minus padding (22 + 22)
-                "feature": 866  // feature width minus padding (22 + 22)
+                "blog": 606,    
+                "feature": 866 
             },
             "margin":
             {
@@ -120,8 +120,8 @@
         },
         "axis_break":
         {
-            "height": 5px,
-            "width": 5px
+            "height": 5,
+            "width": 5
         },
         "grid_line":
         {
@@ -135,7 +135,7 @@
             {
                 "width": 1,
                 "color": "#C0C0BB",
-                "color_ref": ["colors", "line", "grey"]
+                "color_ref": ["colors", "line", "grey"],
                 "margin":
                 {
                     "top": 1,
@@ -145,12 +145,12 @@
         },
         "legend":
         {
-            'background':
+            "background":
             {
                 "color": "#E5E2E0",
-                "color_ref": ['colors', "background", "dark"]
+                "color_ref": ["colors", "background", "dark"]
             },
-            'border':
+            "border":
             {
                 "width": 1,
                 "color": "#C0C0BB",
@@ -161,61 +161,50 @@
         {
             "line":
             {
-                // must be either horizontal or rotated 45 degrees
                 "width": 1,
                 "color": "#C0C0BB",
-                "color_ref": ['colors', "line", "grey"],
-                // SVG Attributes
+                "color_ref": ["colors", "line", "grey"],
                 "stroke-width": 1,
                 "stroke": "#C0C0BB",
-                "stroke_ref": ['colors','line', 'grey']
+                "stroke_ref": ["colors","line", "grey"]
             },
             "shape":
             {
                 "background": "#FFFFFF",
-                "background_ref": ['colors', 'line', 'white'],
+                "background_ref": ["colors", "line", "white"],
                 "border-width": 1,
                 "border-color": "#C0C0BB",
-                "border-color_ref": ['colors', 'line', 'grey'],
-                // SVG Attributes
+                "border-color_ref": ["colors", "line", "grey"],
                 "fill": "#FFFFFF",
-                "fill_ref": ['colors', 'line', 'white']
+                "fill_ref": ["colors", "line", "white"],
                 "stroke": "#C0C0BB",
-                "stroke_ref": ['colors', 'line', 'grey']
-                "stroke-width": 1,
-                /*
-                 *  circle:
-                 *      SVG:        r = radius of highlighted element + 1.5
-                 *                  cx = cx of highlighted element
-                 *      HTML+CSS:   width & height = diameter of highlighted element + 4
-                 *                  border-radius = width/2
-                 */
+                "stroke_ref": ["colors", "line", "grey"],
+                "stroke-width": 1
             }
         },
         "line":
         {
             "width": 2,
-            "stroke-width": 2,
+            "stroke-width": 2
         },
         "trend_line":
         {
             "width": 1,
             "color": "#C0C0BB",
-            "color_ref": ["colors", "line", "grey"]
-            //SVG Attributes
+            "color_ref": ["colors", "line", "grey"],
             "stroke-width":1,
             "stroke": "#C0C0BB",
             "stroke_ref": ["colors", "line", "grey"]
         }
-    }
+    },
 
     "text_styles":
     {
         "header_title" :
         {
-            "font-family" : '"Franklin Gothic Book", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif',
+            "font-family" : "\"Franklin Gothic Book\", \"Franklin Gothic Medium\", \"Franklin Gothic\", \"ITC Franklin Gothic\", Arial, sans-serif",
             "font-size" : "20px",
-            "font-weight": "normal"
+            "font-weight": "normal",
             "font-style": "normal",
             "text-align" : "left",
             "color" : "#635F5D",
@@ -223,9 +212,9 @@
         },
         "header_title_emphatic" :
         {
-            "font-family": '"Franklin Gothic Demi Cond", "Franklin Gothic Medium Cond", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif"'
+            "font-family": "\"Franklin Gothic Demi Cond\", \"Franklin Gothic Medium Cond\", \"Franklin Gothic\", \"ITC Franklin Gothic\", Arial, sans-serif",
             "font-size" : "20px",
-            "font-weight": "normal"
+            "font-weight": "normal",
             "font-style": "normal",
             "text-align" : "left",
             "color" : "#635F5D",
@@ -233,9 +222,9 @@
         },
         "header_title_explanatory":
         {
-            "font-family": 'font-family: Georgia, Times, "Times New Roman", serif',
+            "font-family": "font-family: Georgia, Times, \"Times New Roman\", serif",
             "font-size" : "12px",
-            "font-weight": "normal"
+            "font-weight": "normal",
             "font-style": "italic",
             "text-align" : "left",
             "color" : "#8E8883",
@@ -243,9 +232,9 @@
         },
         "axis_label" :
         {
-            "font-family": '"Franklin Gothic Demi Cond", "Franklin Gothic Medium Cond", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif"'
+            "font-family": "\"Franklin Gothic Demi Cond\", \"Franklin Gothic Medium Cond\", \"Franklin Gothic\", \"ITC Franklin Gothic\", Arial, sans-serif",
             "font-size" : "12px",
-            "font-weight": "normal"
+            "font-weight": "normal",
             "font-style": "normal",
             "text-align" : "center",
             "color" : "#635F5D",
@@ -253,9 +242,9 @@
         },
         "axis_title" :
         {
-            "font-family" : '"Franklin Gothic Book", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif',
+            "font-family" : "\"Franklin Gothic Book\", \"Franklin Gothic Medium\", \"Franklin Gothic\", \"ITC Franklin Gothic\", Arial, sans-serif",
             "font-size" : "12px",
-            "font-weight": "normal"
+            "font-weight": "normal",
             "font-style": "normal",
             "text-align" : "center",
             "color" : "#635F5D",
@@ -263,9 +252,9 @@
         },
         "key_label" :
         {
-            "font-family" : '"Franklin Gothic Book", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif',
+            "font-family" : "\"Franklin Gothic Book\", \"Franklin Gothic Medium\", \"Franklin Gothic\", \"ITC Franklin Gothic\", Arial, sans-serif",
             "font-size" : "10px",
-            "font-weight": "normal"
+            "font-weight": "normal",
             "font-style": "normal",
             "text-align" : "left",
             "color" : "#635F5D",
@@ -273,9 +262,9 @@
         },
         "callout" :
         {
-            "font-family": 'font-family: Georgia, Times, "Times New Roman", serif',
+            "font-family": "font-family: Georgia, Times, \"Times New Roman\", serif",
             "font-size" : "10px",
-            "font-weight": "normal"
+            "font-weight": "normal",
             "font-style": "italic",
             "text-align" : "left",
             "color" : "#635F5D",
@@ -283,9 +272,9 @@
         },
         "point_label" :
         {
-            "font-family" : '"Franklin Gothic Book", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif',
+            "font-family" : "\"Franklin Gothic Book\", \"Franklin Gothic Medium\", \"Franklin Gothic\", \"ITC Franklin Gothic\", Arial, sans-serif",
             "font-size" : "10px",
-            "font-weight": "normal"
+            "font-weight": "normal",
             "font-style": "normal",
             "text-align" : "right",
             "color" : "#635F5D",
@@ -293,9 +282,9 @@
         },
         "citation_title" :
         {
-            "font-family": 'font-family: Georgia, Times, "Times New Roman", serif',
+            "font-family": "font-family: Georgia, Times, \"Times New Roman\", serif",
             "font-size" : "8px",
-            "font-weight": "bold"
+            "font-weight": "bold",
             "font-style": "normal",
             "text-align" : "left",
             "color" : "#8E8883",
@@ -303,9 +292,9 @@
         },
         "citation_source" :
         {
-            "font-family": 'font-family: Georgia, Times, "Times New Roman", serif',
+            "font-family": "font-family: Georgia, Times, \"Times New Roman\", serif",
             "font-size" : "10px",
-            "font-weight": "normal"
+            "font-weight": "normal",
             "font-style": "italic",
             "text-align" : "left",
             "color" : "#8E8883",
@@ -1089,5 +1078,5 @@
                     }
                 ]
         }
-    },
+    }
 }
