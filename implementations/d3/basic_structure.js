@@ -4,7 +4,7 @@ d3.json('styles.json', function(error, s) {
         // Parameters for top-level sizing of plot
         var blog_or_feature = 'blog';
         var desired_height = 400;
-        var units = 'unicorns';
+        var units = 'units';
         var div_selector = "#basic-structure";
 
         // TODO: (optionally?) Apply styles dynamically
