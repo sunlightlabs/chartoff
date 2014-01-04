@@ -104,6 +104,7 @@ d3.json('styles.json', function(error, s) {
                 .attr("transform", "rotate(-90)")
                 .attr("x", function() { return -(height / 2.0);})
                 .attr("y", function() { return -(margin.left);})
+                .attr("dy", function() { return s.text_styles.axis_label['font-size']; })
                 .style("text-anchor", "middle")
                 .text("Y Axis Title");
 
