@@ -69,12 +69,17 @@
 
 /* TEXT */
 
+.test-text {
+    fill: none;
+    stroke: none;
+}
+
 .main-title {
     font-family : "Franklin Gothic Book", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", "Arial Narrow", sans-serif;
     font-size : 20px;
     font-weight: normal;
     font-style: normal;
-    color: "#635F5D";
+    color: #635F5D;
 }
     
 .main-title em {
@@ -87,23 +92,20 @@
     font-size : 12px;
     font-weight: normal;
     font-style: italic;
-    color: "#8E8883";
+    color: #8E8883;
 }
 
-.axis-title {
+.axis text {
+    font-size : 12px;
+    font-weight: normal;
+    font-style: normal;
+    fill: #635F5D;
+    stroke: none;
     font-family : "Franklin Gothic Book", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
-    font-size : 12px;
-    font-weight: normal;
-    font-style: normal;
-    color: "#635F5D";
 }
 
-.axis-label {
+.axis .tick .unit {
     font-family : "Franklin Gothic Demi Cond", "Franklin Gothic Medium Cond", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
-    font-size : 12px;
-    font-weight: normal;
-    font-style: normal;
-    color: "#635F5D";
 }
 
 .citation {
@@ -111,7 +113,7 @@
     font-size : 10px;
     font-weight: normal;
     font-style: italic;
-    color: "#8E8883";
+    color: #8E8883;
 }
 
 .citation em {
@@ -121,4 +123,13 @@
 
 /* PLOT ELEMENTS */
 
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 1px;
+}
 
+.y.axis text {
+    text-anchor: middle;
+}
