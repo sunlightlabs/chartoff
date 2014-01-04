@@ -101,12 +101,12 @@
         {
             "width":
             {
-                "blog": 606,    
-                "feature": 866 
+                "blog": 622, 
+                "feature": 878
             },
             "margin":
             {
-                "top": 22,
+                "top": 0,
                 "left": 85,
                 "bottom": 51,
                 "right": 0
