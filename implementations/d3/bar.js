@@ -123,6 +123,7 @@ d3.json('styles.json', function(error, s) {
                 .select('text')
                 .attr("y",5);
 
+            //  ... add bars using bar_color (set above) for fill
             basicChart.selectAll(".bar")
                 .data(data)
               .enter().append("rect")
