@@ -6,6 +6,7 @@ d3.json('styles.json', function(error, s) {
         var desired_height = 400;
         var units = 'units';
         var div_selector = "#bar-chart";
+        var bar_color = "yellow";
 
         // TODO: (optionally?) Apply styles dynamically
 
@@ -128,8 +129,9 @@ d3.json('styles.json', function(error, s) {
                 .attr("class","bar")
                 .attr("x", function(d) { return x(d.label); })
                 .attr("width", x.rangeBand())
-                .attr("y", function(d) { return height - y(d.value); });
-
+                .attr("y", function(d) { return y(d.value); })
+                .attr("height", function(d) { return height - y(d.value); })
+                .style("fill", function(d) { return s.colors.data.main[bar_color].hex;} );
         });
 
 });
