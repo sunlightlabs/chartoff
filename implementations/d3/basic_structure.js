@@ -31,7 +31,7 @@ d3.json('styles.json', function(error, s) {
                               .text(function(d){ return yFormatter(maxValue) + " " + units; });
 
             //  ... measure width of invisible text object
-            var yLabelWidth = Math.max(testText[0][0].clientWidth,0)
+            var yLabelWidth = Math.max(testText[0][0].getBBox().width,0)
 
             //  ... use larger of two margins
             //  TODO: specify 22 and 5 in styles.json so that they're not hardcoded here
@@ -109,7 +109,7 @@ d3.json('styles.json', function(error, s) {
                 .text("Y Axis Title");
 
             //  ... add value units to value labels in separate span for distinct styling
-            d3.select('.y.axis')
+            d3.select(div_selector + ' .y.axis')
                 .selectAll('.tick')
                 .select('text')
               .append("tspan")

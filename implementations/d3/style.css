@@ -70,8 +70,9 @@
 /* TEXT */
 
 .test-text {
-    fill: none;
-    stroke: none;
+    fill: #000;
+    stroke: #000;
+    visibility: hidden;
 }
 
 .main-title {
@@ -81,7 +82,7 @@
     font-style: normal;
     color: #635F5D;
 }
-    
+
 .main-title em {
     font-family : "Franklin Gothic Demi Cond", "Franklin Gothic Medium Cond", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
     font-style: normal;
