@@ -189,6 +189,7 @@ d3.json('styles.json', function(error, s) {
                 .attr("dx", -5)
                 .text(function(d) { return "$" + yFormatter(d.amount); })
 
+            // TODO: Add Legend
 
         });
 
