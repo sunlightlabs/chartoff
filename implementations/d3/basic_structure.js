@@ -66,6 +66,7 @@ d3.json('styles.json', function(error, s) {
                 .scale(x)
                 .innerTickSize(-height) // really long ticks become gridlines
                 .outerTickSize(0)
+                .tickPadding(5)
                 .orient("bottom");
 
             var yAxis = d3.svg.axis()
@@ -73,6 +74,7 @@ d3.json('styles.json', function(error, s) {
                 .orient("left")
                 .innerTickSize(-width) // really long ticks become gridlines
                 .outerTickSize(0)
+                .tickPadding(5)
                 .tickValues([10, 20, 30]) // setting tick values explicitly
                 .tickFormat(yFormatter);
 
@@ -115,12 +117,6 @@ d3.json('styles.json', function(error, s) {
               .append("tspan")
                 .classed("unit", true)
                 .text(" " + units);
-
-            //  ... nudge x axis labels down a bit
-            d3.select('.x.axis')
-                .selectAll('.tick')
-                .select('text')
-                .attr("y",5);
 
         });
 
