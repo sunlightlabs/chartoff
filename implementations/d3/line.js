@@ -82,7 +82,7 @@ d3.json('styles.json', function(error, s) {
                     .range([height, 0]);
 
             x.domain([
-                        d3.min(data, function(d) { return d3.time.year.offset(d.date, -1);}),
+                        d3.min(data, function(d) { return d3.time.year.offset(d.date, -5);}),
                         d3.max(data, function(d) { return d3.time.year.offset(d.date, 1);})
                             ]);
             
@@ -99,6 +99,7 @@ d3.json('styles.json', function(error, s) {
 
             var xAxis = d3.svg.axis()
                 .scale(x)
+                .ticks(d3.time.year, 10)
                 .innerTickSize(-height) // really long ticks become gridlines
                 .outerTickSize(0)
                 .tickPadding(5)
