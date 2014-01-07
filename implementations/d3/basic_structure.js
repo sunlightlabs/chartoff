@@ -28,7 +28,7 @@ d3.json('styles.json', function(error, s) {
                               .attr("class", "axis")
                             .append("text")
                               .attr("class", "test-text")
-                              .attr("x", 10)
+                              .attr("x", -1000)
                               .classed("axis", "true")
                               .text(function(d){ return yFormatter(maxValue) });
             
