@@ -47,19 +47,20 @@ d3.json('styles.json', function(error, s) {
 
             //  ... create invisible text object
             var testText = svg.append("g")
+                              .attr("class", "axis")
                             .append("text")
-                              .classed("test-text", "true")
+                              .attr("class", "test-text")
+                              .attr("x", 10)
                               .classed("axis", "true")
                               .text(function(d){ return "$" + yFormatter(maxValue); });
-
-            var longestLabel = testText[0][0].getBBox().width
+            
             //  ... measure width of invisible text object
-            var yLabelWidth = Math.max(longestLabel,0)
+            var yLabelWidth = Math.max(testText[0][0].getBoundingClientRect().width,0);
 
             testText.data([]).exit().remove();
 
             //  ... use larger of two margins
-            var suggestedLeftMargin = yLabelWidth + parseInt(s.text_styles.axis_title['font-size']) + s.plot_elements.axis.title_padding;
+            var suggestedLeftMargin = yLabelWidth + parseInt(s.text_styles.axis_title['font-size']) + 2 + s.plot_elements.axis.title_padding;  // plus 2 related to space above/below text
 
             margin.left = Math.max(margin.left, suggestedLeftMargin);
 
@@ -138,8 +139,8 @@ d3.json('styles.json', function(error, s) {
                 .classed("title",true)
                 .attr("transform", "rotate(-90)")
                 .attr("x", function() { return -(height / 2.0);})
-                .attr("y", function() { return -(margin.left - s.plot_elements.axis.label_padding);})
-                .attr("dy", function() { return s.text_styles.axis_label['font-size']; })
+                .attr("y", function() { return -(margin.left);})
+                .attr("dy", function() { return (parseInt(s.text_styles.axis_label['font-size'])-2); }) // minus 2 related to space above/below text
                 .style("text-anchor", "middle")
                 .text("Y Axis Title");
 
