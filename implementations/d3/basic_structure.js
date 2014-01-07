@@ -37,7 +37,6 @@ d3.json('styles.json', function(error, s) {
             testText.data([]).exit().remove();
 
             //  ... use larger of two margins
-            //  TODO: specify 22 and 5 in styles.json so that they're not hardcoded here
             var suggestedLeftMargin = yLabelWidth + parseInt(s.text_styles.axis_title['font-size']) + s.plot_elements.axis.title_padding;
 
             margin.left = Math.max(margin.left, suggestedLeftMargin);
