@@ -116,12 +116,14 @@
         {
             "width": 1,
             "color": "#FFFFFF",
+            "label_padding": 5,
+            "title_padding": 22,
+            "break":
+            {
+                "height": 5,
+                "width": 5
+            },
             "color_ref": ["colors", "line", "white"]
-        },
-        "axis_break":
-        {
-            "height": 5,
-            "width": 5
         },
         "grid_line":
         {
