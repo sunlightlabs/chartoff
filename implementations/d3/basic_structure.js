@@ -1,4 +1,3 @@
-
 d3.json('styles.json', function(error, s) {
 
         // Parameters for top-level sizing of plot
