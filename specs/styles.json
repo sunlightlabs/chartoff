@@ -109,7 +109,23 @@
                 "top": 0,
                 "left": 63,
                 "bottom": 51,
-                "right": 0
+                "right": 0,
+                
+                "default":
+                {
+                    "top": 0,
+                    "left": 63,
+                    "bottom": 51,
+                    "right": 0
+                },
+
+                "pie":
+                {
+                    "top": 0,
+                    "left": 0,
+                    "bottom": 0,
+                    "right": 0
+                }
             }
         },
         "axis":
@@ -144,6 +160,11 @@
                     "bottom": 1
                 }
             }
+        },
+        "pie":
+        {
+            "stroke": "#FFFFFF",
+            "stroke_color_ref": ["colors", "line", "white"]
         },
         "legend":
         {
