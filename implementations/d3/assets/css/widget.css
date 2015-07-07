@@ -1,0 +1,117 @@
+body.widget {
+    background: none;
+    background-color: #EFECEA;
+    margin: 0;
+    color: #635f5d;
+}
+
+body.widget .header-group {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 100%;
+}
+body.widget .header-container {
+    height: 40px;
+}
+
+body.widget .footer-group {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+body.widget .header-container, body.widget .footer-container {
+    box-sizing: content-box;
+    line-height: normal;
+}
+
+body.widget .chart-area {
+    position: absolute;
+    padding: 0;
+    left: 0;
+    right: 0;
+    top: 74px;
+    bottom: 32px;
+}
+
+body.widget .chart-area svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* things specific to this widget */
+body.widget #doc-dialog .list-group {
+    background: #aaa;
+    overflow-y: auto;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+body.widget #doc-dialog .list-group .list-group-item {
+    border-radius: 0;
+}
+
+body.widget .doc-view-panel {
+    display: none;
+}
+
+body.widget a.back-link {
+    color: #333;
+}
+
+/* svg styles */
+body.widget svg circle:hover {
+    stroke: #ddd !important;
+    stroke-width: 3px !important;
+}
+body.widget svg circle.selected, body.widget svg circle.selected:hover {
+    stroke: #fff !important;
+    stroke-width: 3px !important;
+}
+body.widget svg text {
+    fill: #635f5d;
+}
+body.widget .meta-container table {
+    margin-bottom: 0;
+    border-bottom: 1px solid #ccc;
+    background: #f4f4f4;
+}
+body.widget .meta-container table .meta-label {
+    width: 20%;
+    font-weight: bold;
+    text-align: right;
+}
+body.widget .doc-view-panel .panel-body {
+    white-space: pre-wrap;
+    overflow-y: auto;
+}
+body.widget .doc-view-panel .panel-body::before, body.widget .doc-view-panel .panel-body::after {
+    display: none;
+}
+body.widget .tlabel div {
+    text-align: center;
+    padding: 5px;
+    background: rgba(255,255,255,0.25);
+    line-height: 100%;
+    font-weight: bold;
+    color: #444240;
+}
+body.widget .annotations .title div {
+    padding: 10px;
+    padding-left: 20px;
+    background: rgba(255,255,255,0.25);
+    color: #444240;
+}
+
+@media (max-width: 800px), (max-height: 600px) {
+  body.widget .zoom0 .tlabel div {
+    width: 100px;
+    margin-left: 50px;
+    font-size: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

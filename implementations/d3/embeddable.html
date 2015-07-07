@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="assets/js/lib/d3.v3.min.js"></script>
+    <!--
+        <script src="//use.typekit.com/blp6kvr.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+    -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/widget.css">
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', '<YOUR_GA_KEY>', '<YOUR_DOMAIN>');
+    ga('send', 'pageview');
+    ga('create', '<YOUR_GA_KEY>', '<YOUR_DOMAIN>', {'name': 'global'});
+        ga('global.send', 'pageview');
+        </script>
+    </head>
+    <body class="widget">
+        <div class="header-group">
+            <div class="divider solid"></div>
+            <div class="header-container">
+                <div class="header-title">
+                    <div class="main-title">
+                        Title
+                    </div>
+                    <div class="explanatory">
+                        Subtitle
+                    </div>
+                </div>
+                <div class="header-logo">
+                </div>
+            </div>
+            <div class="divider solid"></div>
+        </div>
+
+        <div class="chart-area">
+            <svg class="canvas">
+            </svg>
+        </div>
+
+        <div class="footer-group">
+            <div class="divider dashed"></div>
+            <div class="footer-container">
+                <div class="citation" style="text-align: right;">
+                    <a id="embed-link" href="#">embed this widget</a>
+                    <a id="new-link" href="#">view in new window</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals -->
+
+        <!-- Detail overlay. Can be used to show more detail about a data point -->
+        <div class="modal fade" id="doc-dialog" tabindex="-1" role="dialog" aria-labelledby="doc-dialog-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="doc-dialog-label">Modal Title</h4>
+              </div>
+              <div class="modal-body">
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="embed-dialog" tabindex="-1" role="dialog" aria-labelledby="doc-dialog-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="doc-dialog-label">Modal title</h4>
+              </div>
+              <div class="modal-body">
+
+                Copy this code to embed the widget:
+                <div class="well" style="font-family: monospace;">
+                    &lt;iframe src="<span class="iframe-src"></span>" height="<span class="iframe-height"></span>" width="<span class="iframe-width"></span>"&gt;&lt;/iframe&gt;
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="assets/js/widget.js">
+
+        </script>
+    </body>
+</html>
