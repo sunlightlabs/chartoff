@@ -33,18 +33,18 @@ d3.json('styles.json', function(error, s) {
                               .attr("y", -1000)
                               .classed("axis", "true")
                               .text(function(d){ return xFormatter(maxValue) });
-            
+
             testText.append("tspan")
                     .classed("unit", true)
                     .text(" " + units);
 
             //  ... measure width of invisible text object
-            var xLabelHeight = Math.max(testText[0][0].getBoundingClientRect().height,0);
+            var yLabelHeight = Math.max(testText[0][0].getBoundingClientRect().width,0);
 
             testText.data([]).exit().remove();
 
             //  ... use larger of two margins
-            var suggestedLeftMargin = xLabelHeight + parseInt(s.text_styles.axis_title['font-size']) + 2 + s.plot_elements.axis.title_padding;  // plus 2 related to space above/below text
+            var suggestedLeftMargin = yLabelHeight + parseInt(s.text_styles.axis_title['font-size']) + 2 + s.plot_elements.axis.title_padding;  // plus 2 related to space above/below text
 
             margin.left = Math.max(margin.left, suggestedLeftMargin);
 
@@ -76,11 +76,11 @@ d3.json('styles.json', function(error, s) {
                 .innerTickSize(-width) // really long ticks become gridlines
                 .outerTickSize(0)
                 .tickPadding(5)
-                .orient("bottom");
+                .orient("left");
 
             var xAxis = d3.svg.axis()
                 .scale(x)
-                .orient("left")
+                .orient("bottom")
                 .innerTickSize(-height) // really long ticks become gridlines
                 .outerTickSize(0)
                 .tickPadding(5)
@@ -95,28 +95,28 @@ d3.json('styles.json', function(error, s) {
                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
             //  ... add x axis
             basicChart.append("g")
-                .attr("class", "y axis")
-                .attr("transform", "translate(0," + height + ")")
-                .call(yAxis)
-              .append("text")
-                .classed("title",true)
-                .attr("y", function() { return (width / 2.0);}) // anchors title in middle of chart
-                .attr("x", function() { return (margin.bottom);})
-                .style("text-anchor", "middle") // centers title around anchor
-                .text("Y Axis Title");
-
-            //  ... add y axis with value labels
-            basicChart.append("g")
                 .attr("class", "x axis")
+                .attr("transform", "translate(0," + height + ")")
                 .call(xAxis)
               .append("text")
                 .classed("title",true)
-                .attr("transform", "rotate(-90)")
-                .attr("y", function() { return -(width / 2.0);})
-                .attr("x", function() { return -(margin.left);})
-                .attr("dx", function() { return (parseInt(s.text_styles.axis_label['font-size'])-2); }) // minus 2 related to space above/below text
-                .style("text-anchor", "middle")
+                .attr("x", function() { return (width / 2.0);}) // anchors title in middle of chart
+                .attr("y", function() { return (margin.bottom);})
+                .style("text-anchor", "middle") // centers title around anchor
                 .text("X Axis Title");
+
+            //  ... add y axis with value labels
+            basicChart.append("g")
+                .attr("class", "y axis")
+                .call(yAxis)
+              .append("text")
+                .classed("title",true)
+                .attr("transform", "rotate(-90)")
+                .attr("x", function() { return -(height / 2.0);})
+                .attr("y", function() { return -(margin.left);})
+                .attr("dy", function() { return (parseInt(s.text_styles.axis_label['font-size'])-2); }) // minus 2 related to space above/below text
+                .style("text-anchor", "middle")
+                .text("Y Axis Title");
 
             //  ... add value units to value labels in separate span for distinct styling
             d3.select(div_selector + ' .x.axis')
