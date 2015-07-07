@@ -1,22 +1,22 @@
 
-d3.json('styles.json', function(error, s) {
+d3.json('assets/specs/styles.json', function(error, s) {
 
         // Parameters for top-level sizing of plot
         var blog_or_feature = 'blog';
         var desired_height = 400;
         var units = 'units';
-        var div_selector = "#bar-chart";
+        var div_selector = "#hbar-chart";
         var bar_color = "yellow";
 
         // TODO: (optionally?) Apply styles dynamically
 
-        d3.json('test_data.json', function(error, data) {
+        d3.json('data/test_data.json', function(error, data) {
 
             var svg = d3.select(div_selector+' svg');
 
             var maxValue = d3.max(data, function(d) { return d.value; });
 
-            var yFormatter = d3.format(",.0d");
+            var xFormatter = d3.format(",.0d");
 
             /*
              * Setting margins according to longest yAxis label, default to styles.json
@@ -30,21 +30,21 @@ d3.json('styles.json', function(error, s) {
                               .attr("class", "axis")
                             .append("text")
                               .attr("class", "test-text")
-                              .attr("x", -1000)
+                              .attr("y", -1000)
                               .classed("axis", "true")
-                              .text(function(d){ return yFormatter(maxValue) });
-            
+                              .text(function(d){ return xFormatter(maxValue) });
+
             testText.append("tspan")
                     .classed("unit", true)
                     .text(" " + units);
 
             //  ... measure width of invisible text object
-            var yLabelWidth = Math.max(testText[0][0].getBoundingClientRect().width,0);
+            var yLabelHeight = Math.max(testText[0][0].getBoundingClientRect().width,0);
 
             testText.data([]).exit().remove();
 
             //  ... use larger of two margins
-            var suggestedLeftMargin = yLabelWidth + parseInt(s.text_styles.axis_title['font-size']) + 2 + s.plot_elements.axis.title_padding;  // plus 2 related to space above/below text
+            var suggestedLeftMargin = yLabelHeight + parseInt(s.text_styles.axis_title['font-size']) + 2 + s.plot_elements.axis.title_padding;  // plus 2 related to space above/below text
 
             margin.left = Math.max(margin.left, suggestedLeftMargin);
 
@@ -59,33 +59,33 @@ d3.json('styles.json', function(error, s) {
              * Creating scales
              */
 
-            var x = d3.scale.ordinal()
-                    .rangeRoundBands([0, width], .1)
+            var y = d3.scale.ordinal()
+                    .rangeRoundBands([0, height], .1)
                     .domain(data.map(function(d) { return d.label; }));
 
-            var y = d3.scale.linear()
-                    .range([height, 0])
+            var x = d3.scale.linear()
+                    .range([0, width])
                     .domain([0, maxValue + 2]);
 
             /*
              * Creating Axes and Gridlines (innerTick)
              */
 
-            var xAxis = d3.svg.axis()
-                .scale(x)
-                .innerTickSize(-height) // really long ticks become gridlines
-                .outerTickSize(0)
-                .tickPadding(5)
-                .orient("bottom");
-
             var yAxis = d3.svg.axis()
                 .scale(y)
-                .orient("left")
                 .innerTickSize(-width) // really long ticks become gridlines
                 .outerTickSize(0)
                 .tickPadding(5)
+                .orient("left");
+
+            var xAxis = d3.svg.axis()
+                .scale(x)
+                .orient("bottom")
+                .innerTickSize(-height) // really long ticks become gridlines
+                .outerTickSize(0)
+                .tickPadding(5)
                 .tickValues([10, 20, 30]) // setting tick values explicitly
-                .tickFormat(yFormatter);
+                .tickFormat(xFormatter);
 
             /*
              * Drawing chart
@@ -93,7 +93,6 @@ d3.json('styles.json', function(error, s) {
 
             var basicChart = svg.append("g")
                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
             //  ... add x axis
             basicChart.append("g")
                 .attr("class", "x axis")
@@ -120,7 +119,7 @@ d3.json('styles.json', function(error, s) {
                 .text("Y Axis Title");
 
             //  ... add value units to value labels in separate span for distinct styling
-            d3.select(div_selector + ' .y.axis')
+            d3.select(div_selector + ' .x.axis')
                 .selectAll('.tick')
                 .select('text')
               .append("tspan")
@@ -132,10 +131,10 @@ d3.json('styles.json', function(error, s) {
                 .data(data)
               .enter().append("rect")
                 .attr("class","bar")
-                .attr("x", function(d) { return x(d.label); })
-                .attr("width", x.rangeBand())
-                .attr("y", function(d) { return y(d.value); })
-                .attr("height", function(d) { return height - y(d.value); })
+                .attr("y", function(d) { return y(d.label); })
+                .attr("height", y.rangeBand())
+                .attr("x", function(d) { return 0; })
+                .attr("width", function(d) { return x(d.value); })
                 .style("fill", function(d) { return s.colors.data.main[bar_color].hex;} );
         });
 

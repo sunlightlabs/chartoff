@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 <html>
     <head>
-        <script src="assets/js/d3.v3.min.js"></script>
+        <script src="assets/js/lib/d3.v3.min.js"></script>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </head>
     <body>
@@ -35,6 +35,33 @@
         </div>
         <h1>Bar Chart</h1>
         <div id="bar-chart" class="graphic-container-blog">
+            <div class="divider solid"></div>
+            <div class="header-container">
+                <div class="header-title">
+                    <div class="main-title">
+                        Title of the <em>chart</em> 
+                    </div>
+                    <div class="explanatory">
+                        For explanatory text that's not very long.
+                    </div>
+                </div>
+                <div class="header-logo">
+                </div>
+            </div>
+            <div class="divider solid"></div>
+            <div class="chart-area">
+                <svg class="canvas">
+                </svg>
+            </div>
+            <div class="divider dashed"></div>
+            <div class="footer-container">
+                <div class="citation">
+                    <em>Source:</em> www.fruitsperbushel.com
+                </div>
+            </div>
+        </div>
+        <h1>Horizontal Bar Chart</h1>
+        <div id="hbar-chart" class="graphic-container-blog">
             <div class="divider solid"></div>
             <div class="header-container">
                 <div class="header-title">
@@ -114,9 +141,98 @@
                 </div>
             </div>
         </div>
+
+        <h1>CFPB Chart</h1>
+        <div id="cfpb-chart" class="graphic-container-blog">
+            <div class="divider solid"></div>
+            <div class="header-container">
+                <div class="header-title">
+                    <div class="main-title">
+                        CFPB Complaint Volume
+                    </div>
+                    <div class="explanatory">
+                        By financial product
+                    </div>
+                </div>
+                <div class="header-logo">
+                </div>
+            </div>
+            <div class="divider solid"></div>
+            <div class="chart-area">
+                <svg class="canvas">
+                </svg>
+            </div>
+            <div class="divider dashed"></div>
+            <div class="footer-container">
+                <div class="citation">
+                    <em>Data Source:</em> http://www.consumerfinance.gov/complaintdatabase/
+                </div>
+            </div>
+        </div>
+
+
+                <h1>CFPB Chart</h1>
+        <div id="cfpb-mortgage-chart" class="graphic-container-blog">
+            <div class="divider solid"></div>
+            <div class="header-container">
+                <div class="header-title">
+                    <div class="main-title">
+                        CFPB Complaint Volume
+                    </div>
+                    <div class="explanatory">
+                        By financial product
+                    </div>
+                </div>
+                <div class="header-logo">
+                </div>
+            </div>
+            <div class="divider solid"></div>
+            <div class="chart-area">
+                <svg class="canvas">
+                </svg>
+            </div>
+            <div class="divider dashed"></div>
+            <div class="footer-container">
+                <div class="citation">
+                    <em>Data Source:</em> http://www.consumerfinance.gov/complaintdatabase/
+                </div>
+            </div>
+        </div>
+
+        <h1>CFPB Chart</h1>
+        <div id="cfpb-bar-chart" class="graphic-container-blog">
+            <div class="divider solid"></div>
+            <div class="header-container">
+                <div class="header-title">
+                    <div class="main-title">
+                        CFPB Complaint Volume
+                    </div>
+                    <div class="explanatory">
+                        By financial product
+                    </div>
+                </div>
+                <div class="header-logo">
+                </div>
+            </div>
+            <div class="divider solid"></div>
+            <div class="chart-area">
+                <svg class="canvas">
+                </svg>
+            </div>
+            <div class="divider dashed"></div>
+            <div class="footer-container">
+                <div class="citation">
+                    <em>Data Source:</em> http://www.consumerfinance.gov/complaintdatabase/
+                </div>
+            </div>
+        </div>
     <script type="text/javascript" src="assets/js/basic_structure.js"></script>
     <script type="text/javascript" src="assets/js/bar.js"></script>
     <script type="text/javascript" src="assets/js/line.js"></script>
     <script type="text/javascript" src="assets/js/pie.js"></script>
+    <script type="text/javascript" src="assets/js/hbar.js"></script>
+    <script type="text/javascript" src="assets/js/cfpb.js"></script>
+    <script type="text/javascript" src="assets/js/cfpb_bar.js"></script>
+    <script type="text/javascript" src="assets/js/cfpb_mortgage.js"></script>
     </body>
 </html>

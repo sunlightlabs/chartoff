@@ -1,14 +1,16 @@
-d3.json('styles.json', function(error, s) {
+
+d3.json('assets/specs/styles.json', function(error, s) {
 
         // Parameters for top-level sizing of plot
         var blog_or_feature = 'blog';
         var desired_height = 400;
         var units = 'units';
-        var div_selector = "#basic-structure";
+        var div_selector = "#bar-chart";
+        var bar_color = "yellow";
 
         // TODO: (optionally?) Apply styles dynamically
 
-        d3.json('test_data.json', function(error, data) {
+        d3.json('data/test_data.json', function(error, data) {
 
             var svg = d3.select(div_selector+' svg');
 
@@ -125,6 +127,16 @@ d3.json('styles.json', function(error, s) {
                 .classed("unit", true)
                 .text(" " + units);
 
+            //  ... add bars using bar_color (set above) for fill
+            basicChart.selectAll(".bar")
+                .data(data)
+              .enter().append("rect")
+                .attr("class","bar")
+                .attr("x", function(d) { return x(d.label); })
+                .attr("width", x.rangeBand())
+                .attr("y", function(d) { return y(d.value); })
+                .attr("height", function(d) { return height - y(d.value); })
+                .style("fill", function(d) { return s.colors.data.main[bar_color].hex;} );
         });
 
 });

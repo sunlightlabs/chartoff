@@ -1,4 +1,4 @@
-d3.json('styles.json', function(error, s) {
+d3.json('assets/specs/styles.json', function(error, s) {
 
         // Parameters for top-level sizing of plot
         var blog_or_feature = 'blog';
@@ -10,7 +10,7 @@ d3.json('styles.json', function(error, s) {
 
         // TODO: (optionally?) Apply styles dynamically
 
-        d3.json('test_data_line.json', function(error, data) {
+        d3.json('data/test_data_line.json', function(error, data) {
 
             var svg = d3.select(div_selector+' svg');
 
