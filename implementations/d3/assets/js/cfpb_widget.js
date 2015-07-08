@@ -1,4 +1,7 @@
 // from http://stackoverflow.com/questions/9235304/how-to-replace-the-location-hash-and-only-keep-the-last-history-entry
+
+var testvar;
+
 (function(namespace) { // Closure to protect local variable "var hash"
     if ('replaceState' in history) { // Yay, supported!
         namespace.replaceHash = function(newhash) {
@@ -67,7 +70,7 @@
             var filtered_keys;
 
             if (window.location.hash != "") {
-                filtered_keys = window.location.hash.replace('#','').split(',');
+                filtered_keys = window.location.hash.replace('%20',' ').replace('#','').split(',');
             } else {
                 filtered_keys = all_keys;
             };
@@ -95,7 +98,7 @@
                 d.date = parseDate(d.quarter);
             });
 
-            console.log(data);
+            //console.log(data);
             
             var products;
 
@@ -111,11 +114,17 @@
                 
 
 
-            console.log(products);
+            //console.log(products);
+            console.log(all_keys);
 
-            var maxValue = d3.max(products, function(c) {
-                return d3.max(c.values, function(v) { return v.amount; }); 
+            var maxValue = d3.max(data, function(d) {
+                return d3.max(all_keys, function(k) { 
+                    console.log(d[k]);
+                    return +d[k];}); 
             });
+
+            console.log(maxValue);
+            //testvar = maxValue;
 
             /*
              * Setting margins according to longest yAxis label, default to styles.json
@@ -123,6 +132,7 @@
 
             //  ... get default margins from specs
             var margin = styles.plot_elements.canvas.margin;
+            testvar = margin;
 
             //  ... create invisible text object
             var testText = svg.append("g")
@@ -168,7 +178,7 @@
                     // Style guide says to start at zero
                     //d3.min(parties, function(c) { return d3.min(c.values, function(v) { return v.amount; }); }),
                     0,
-                    d3.max(products, function(c) { return d3.max(c.values, function(v) { return v.amount; }); }) + 100
+                    maxValue + 500
                 ]);
 
             /*
@@ -206,7 +216,7 @@
               .append("text")
                 .classed("title",true)
                 .attr("x", function() { return (chart_width / 2.0);}) // anchors title in middle of chart
-                .attr("y", function() { return (margin.bottom);})
+                .attr("y", function() { return (margin.bottom - 10);})
                 .style("text-anchor", "middle") // centers title around anchor
                 .text("Date");
 
@@ -218,7 +228,7 @@
                 .classed("title",true)
                 .attr("transform", "rotate(-90)")
                 .attr("x", function() { return -(chart_height / 2.0);})
-                .attr("y", function() { return -(margin.left);})
+                .attr("y", function() { return -(margin.left - 10);})
                 .attr("dy", function() { return (parseInt(styles.text_styles.axis_label['font-size'])-2); }) // minus 2 related to space above/below text
                 .style("text-anchor", "middle")
                 .text("Number of Complaints");
@@ -248,7 +258,10 @@
                 .attr("dy", ".35em")
                 .style("font-size", styles.text_styles.point_label['font-size'])
                 .style("font-family", styles.text_styles.point_label['font-family'])
-                .text(function(d) { return d.name; });
+                .text(function(d) { return d.name; })
+                .on('click', function(d) {
+                    window.replaceHash(d.name);
+                });
 
             var point = product.append("g")
                 .attr("class", "line-point");
@@ -259,15 +272,18 @@
                 .attr("cx", function(d) { return x(d.date); })
                 .attr("cy", function(d) { return y(d.amount); })
                 .attr("r", 3)
-                .style("fill", function(d) { console.log(d); return color(d.name); })
-               
+                .style("fill", function(d) { return color(d.name); })
 
         };
 
         /* OBTAINING DATA (uncomment whichever applies) */
         d3.csv('data/' + dataset + '.csv', draw);
         //d3.json('data/' + dataset + '.json', draw)
-
+        
+        window.addEventListener("hashchange", function(){
+            console.log('Hash changed!');
+            d3.csv('data/' + dataset + '.csv', draw);
+        });
 
         $('#doc-dialog').on('hidden.bs.modal', function () {
             window.replaceHash(focus.id);

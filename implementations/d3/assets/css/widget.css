@@ -29,7 +29,6 @@ body.widget .header-container, body.widget .footer-container {
 
 body.widget .chart-area {
     position: absolute;
-    padding: 0;
     left: 0;
     right: 0;
     top: 74px;

@@ -106,17 +106,17 @@
             },
             "margin":
             {
-                "top": 0,
+                "top": 22,
                 "left": 63,
                 "bottom": 51,
-                "right": 0,
+                "right": 22,
                 
                 "default":
                 {
-                    "top": 0,
+                    "top": 22,
                     "left": 63,
                     "bottom": 51,
-                    "right": 0
+                    "right": 22
                 },
 
                 "pie":

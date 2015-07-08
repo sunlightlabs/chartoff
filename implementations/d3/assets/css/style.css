@@ -22,7 +22,7 @@
 }
 
 .header-title {
-    width: 505px;
+    width: 70%;
     margin: 0;
     float:left;
     text-align: left,
@@ -36,12 +36,14 @@
     float:right;
 }
 
+/*
 .chart-area {
     padding-top: 22px;
-    padding-right: 0px;
+    padding-right: 22px;
     padding-bottom: 22px;
     padding-left: 22px;
-}
+} 
+*/
 
 .divider {
     width: 100%;
